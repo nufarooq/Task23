@@ -13,25 +13,6 @@ namespace Calculation_WebAPI.Controllers
 
     public class ValuesController : ApiController
     {
-        // GET api/values
-        [HttpGet]
-        [ActionName("Add")]
-        public IHttpActionResult Get(int num1, int num2, int typeid)
-        {
-            int result = 0;
-            if(typeid == 1)
-            {
-                result = num1+ num2;
-            }
-            else { result = num1 * num2; }
-            return Ok(result);
-        }
-
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
 
         // POST api/values
         [HttpPost]
@@ -47,14 +28,5 @@ namespace Calculation_WebAPI.Controllers
             return Ok(result);
         }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
     }
 }
