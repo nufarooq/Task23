@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculation-WebAPI", "Calculation-WebAPI.csproj", "{4AA946BF-4FAB-47FD-A473-2ED8396B1B6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationView", "..\CalculationView\CalculationView.csproj", "{148D66DD-7900-4561-A4FC-94F59DC5CA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AA946BF-4FAB-47FD-A473-2ED8396B1B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA946BF-4FAB-47FD-A473-2ED8396B1B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA946BF-4FAB-47FD-A473-2ED8396B1B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA946BF-4FAB-47FD-A473-2ED8396B1B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148D66DD-7900-4561-A4FC-94F59DC5CA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148D66DD-7900-4561-A4FC-94F59DC5CA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148D66DD-7900-4561-A4FC-94F59DC5CA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148D66DD-7900-4561-A4FC-94F59DC5CA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA6A64A0-556D-4352-868F-726450077C3B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#btnSubmit").click(function () {
+                debugger;
+                $.ajax({
+                    url: 'https://localhost:44303/api/Values/Calculate', //Get?num1=4&num2=2&typeid=2',
+                    dataType: 'json',
+                    /*content-type:'application/json',*/
+                    method: "POST",
+                        data: {
+                            'num1' : $("#txtNum1").val(), 'num2': $("#txtNum2").val(), typeid: $('input[name="rdCalc"]:checked').val()
+                    },
+                    success: function(obj) {
+                        $("#spnMsg").html("Result : " + obj);
+                    },
+                    error: function (error) { alert("Error " + error); }
+                })
+
+            });
+        });
+        
+    </script>
+
+</head>
+<body>
+
+    Enter Number 1 : <input type="text" id="txtNum1" /> <br />
+    Enter Number 2 : <input type="text" id="txtNum2" /><br /><br />
+    <input type="radio" name="rdCalc" id="rdAdd" value="1"/> <label for="rdAdd">Add</label>
+    <input type="radio" name="rdCalc" id="rdMultiple" value="2"/> <label for="rdMultiple">Multiple</label><br />
+    <input type="submit" value="Calculate" id="btnSubmit" /><br /><br />
+
+    <span id="spnMsg"></span>
+
+</body>
+</html>
